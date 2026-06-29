@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAISON — Storage</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+.page-hero-bg { background-image:url('images/storage.jpg'); }
+.filter-bar { padding:30px 40px; display:flex; gap:12px; flex-wrap:wrap; justify-content:center; }
+.filter-btn { background:none; border:1px solid var(--sand); color:var(--text-mid); padding:8px 22px; font-family:'Jost',sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; cursor:pointer; transition:var(--transition); border-radius:1px; }
+.filter-btn:hover,.filter-btn.active { background:var(--espresso); color:var(--cream); border-color:var(--espresso); }
+.info-strip { background:var(--sand); padding:50px 60px; display:grid; grid-template-columns:repeat(4,1fr); gap:30px; text-align:center; margin-bottom:0; }
+.info-item h3 { font-family:'Cormorant Garamond',serif; font-size:30px; color:var(--espresso); font-weight:300; }
+.info-item p { font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--text-mid); margin-top:4px; }
+@media(max-width:768px){.info-strip{grid-template-columns:1fr 1fr;padding:30px 20px}.filter-bar{padding:20px}.page-hero-content{padding:0 24px}}
+</style>
+</head>
+<body>
+
+ <?php include "navbar.php"; ?>
+<div class="page-hero">
+  <div class="page-hero-bg" id="heroBg"></div>
+  <div class="page-hero-content">
+    <p class="page-tag">Order & Elegance</p>
+    <h1 class="page-title">The <em>Storage</em><br>Collection</h1>
+  </div>
+</div>
+
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span>Bookshelves</span> <span class="marquee-sep">✦</span> <span>Cabinets</span> <span class="marquee-sep">✦</span> <span>Chest of Drawers</span> <span class="marquee-sep">✦</span> <span>Wardrobes</span> <span class="marquee-sep">✦</span> <span>Media Units</span> <span class="marquee-sep">✦</span> <span>Entryway</span> <span class="marquee-sep">✦</span> <span>Bookshelves</span> <span class="marquee-sep">✦</span> <span>Cabinets</span> <span class="marquee-sep">✦</span> <span>Chest of Drawers</span> <span class="marquee-sep">✦</span> <span>Wardrobes</span> <span class="marquee-sep">✦</span> <span>Media Units</span> <span class="marquee-sep">✦</span> <span>Entryway</span>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <button class="filter-btn active">All Pieces</button>
+  <button class="filter-btn">New Arrivals</button>
+  <button class="filter-btn">Bestsellers</button>
+  <button class="filter-btn">On Sale</button>
+  <button class="filter-btn">Under Rs.12000</button>
+  <button class="filter-btn">Premium</button>
+</div>
+
+<div class="section-head reveal">
+  <p class="section-tag">Order & Elegance</p>
+  <h2 class="section-title">Our <em>Storage</em> Range</h2>
+  <div class="section-line"></div>
+</div>
+
+<div class="products-section">
+  <div class="products-grid">
+    
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/book (1).jpg" alt="Alcott Bookshelf" loading="lazy">
+          <div class="product-badge">Bestseller</div>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Bookshelves</p>
+          <h3 class="product-name">Alcott Bookshelf</h3>
+          <p class="product-desc">Open walnut shelving with asymmetric compartments. Display art, books, and life.</p>
+          <div class="product-footer">
+            <div class="product-price">Rs.19100</div>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:0.08s">
+        <div class="product-img-wrap">
+          <img src="images/media unit.jpg" alt="Haven Media Unit" loading="lazy">
+          <div class="product-badge">Sale</div>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Media Units</p>
+          <h3 class="product-name">Haven Media Unit</h3>
+          <p class="product-desc">Low-profile walnut media cabinet with cable management and adjustable shelves.</p>
+          <div class="product-footer">
+            <div class="product-price"><span>Rs.41,900</span>Rs.38560</div>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:0.16s">
+        <div class="product-img-wrap">
+          <img src="images/cabinet.jpg" alt="Portico Cabinet" loading="lazy">
+          <div class="product-badge">New</div>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Cabinets</p>
+          <h3 class="product-name">Portico Cabinet</h3>
+          <p class="product-desc">Solid oak cabinet with cane-front doors and interior lighting. A true statement piece.</p>
+          <div class="product-footer">
+            <div class="product-price">Rs.22,200</div>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:0.24s">
+        <div class="product-img-wrap">
+          <img src="images/bench (2).jpg" alt="Entry Hall Bench" loading="lazy">
+          
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Entryway</p>
+          <h3 class="product-name">Entry Hall Bench</h3>
+          <p class="product-desc">Shoe storage bench with top cushion, hooks above and basket drawers below.</p>
+          <div class="product-footer">
+            <div class="product-price">Rs.9800</div>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:0.32s">
+        <div class="product-img-wrap">
+          <img src="images/chest.jpg" alt="Apex Chest of Drawers" loading="lazy">
+          
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Chest of Drawers</p>
+          <h3 class="product-name">Apex Chest of Drawers</h3>
+          <p class="product-desc">Solid birch 5-drawer chest with a warm lacquer finish and brass pulls.</p>
+          <div class="product-footer">
+            <div class="product-price">Rs.32980</div>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal" style="transition-delay:0.40s">
+        <div class="product-img-wrap">
+          <img src="images/wardrobe (2).jpg" alt="Modular Wardrobe System" loading="lazy">
+          <div class="product-badge">New</div>
+        </div>
+        <div class="product-info">
+          <p class="product-cat">Wardrobes</p>
+          <h3 class="product-name">Modular Wardrobe System</h3>
+          <p class="product-desc">Fully customisable modular wardrobe. Choose your configuration, colours, and handles.</p>
+          <div class="product-footer">
+            <div class="product-price">Rs.104600</div>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="info-strip">
+  <div class="info-item reveal">
+    <h3>Free</h3>
+    <p>White Glove Delivery</p>
+  </div>
+  <div class="info-item reveal" style="transition-delay:0.1s">
+    <h3>5 Yr</h3>
+    <p>Craftsmanship Warranty</p>
+  </div>
+  <div class="info-item reveal" style="transition-delay:0.2s">
+    <h3>60 Day</h3>
+    <p>Returns &amp; Exchanges</p>
+  </div>
+  <div class="info-item reveal" style="transition-delay:0.3s">
+    <h3>100%</h3>
+    <p>Sustainably Sourced</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">MAISON</div>
+      <p class="footer-desc">Timeless furniture for the modern home. Handcrafted with purpose, designed to endure, and made to inspire.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Collections</h4>
+      <ul>
+        <li><a href="living.html">Living Room</a></li>
+        <li><a href="bedroom.html">Bedroom</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="outdoor.html">Outdoor</a></li>
+        <li><a href="storage.html">Storage</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Craftsmanship</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Delivery &amp; Returns</a></li>
+        <li><a href="#">Care Guide</a></li>
+        <li><a href="#">Custom Orders</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 MAISON. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">Pinterest</a>
+      <a href="#">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('open'));
+  document.getElementById('closeMenu').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+  document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',function(){document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')}));
+  const revealEls=document.querySelectorAll('.reveal');
+  const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:0.1});
+  revealEls.forEach(el=>observer.observe(el));
+  setTimeout(()=>document.getElementById('heroBg').classList.add('loaded'),100);
+</script>
+</body>
+</html>
